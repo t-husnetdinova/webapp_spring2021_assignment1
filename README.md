@@ -9,4 +9,3 @@ Learning objectives: Our goal is to use our HTML5 and CSS3 skills to build a nic
 Technologies used: HTML5, CSS3, Javascript for code, Visual Studio Code for development and testing, Google Chrome browser for testing, Windows 10 OS <br>
 Justification in design choices: COMING SOON <br>
 Extra features: COMING SOON <br>
-Report: https://docs.google.com/document/d/1E3e87zXlYeUfrbvhdEbYkP8VSQWYUxlhupiFKD3btgY/edit?usp=sharing <br>
