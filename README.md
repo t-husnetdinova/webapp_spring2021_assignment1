@@ -9,3 +9,5 @@ Learning objectives: Our goal is to use our HTML5 and CSS3 skills to build a nic
 Technologies used: HTML5, CSS3, Javascript for code, Visual Studio Code for development and testing, Google Chrome browser for testing, Windows 10 OS <br>
 Justification in design choices: COMING SOON <br>
 Extra features: COMING SOON <br>
+
+Link: https://t-husnetdinova.github.io/webapp_spring2021_assignment1/ <br>
