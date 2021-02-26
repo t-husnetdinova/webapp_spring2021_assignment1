@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Let's Take a Selfie! </title>
+
+        <!-- Links to external images -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="icon" type="image/svg" href="wink-svgrepo-com.svg">
+    </head>
+
+    <body>
+        <header>
+            <!-- Link to external css stylesheet -->
+            <link rel="stylesheet" href="styles.css">
+        </header>
+
+        <!-- Top navbar -->
+        <nav class="navbar navbar-light navbar-expand-md justify-content-left navbar-fixed-top"
+            style="background-color: #ffffff;">
+
+            <a class="navbar-brand" href="#">
+                <img src="wink-svgrepo-com.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Let's Take a Selfie!
+            </a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Nav bar items -->
+            <ul class="nav navbar-nav ml-auto">
+                <a class="nav-link" href="#"> </a>
+
+                <!-- Search bar -->
+                <li class="nav-item">
+                    <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
+
+                <a class="nav-link" href="#"> </a>
+
+                <!-- Log in button -->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#login">Log In</button>
+                </li>
+
+                <a class="nav-link" href="#"> </a>
+
+                <!-- Sign up button -->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signup">Sign Up</button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Log In Modal -->
+        <div class="modal" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <form class="form-signin">
+                            <img src="smile-svgrepo-com.svg" width="100" height="100" class="d-inline-block align-top"
+                                alt="">
+                            <h2 class="h3 mb-3 font-weight-normal"> Welcome Back! </h2>
+
+                            <input type="email" class="form-control" placeholder="Email" required> <br>
+                            <input type="password" class="form-control" placeholder="Password" required> <br>
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">Remember Me</label> <br> <br>
+                            <button class="btn btn-primary btn-block" type="submit">Log In</button>
+                            <button class="btn btn-secondary btn-block" type="reset">Reset</button> <br>
+                            <!-- Password reset -->
+                            <!-- Will need to replace eventually with ref to reset page or more modal logic -->
+                            <span class="forgot-password">
+                                <a href="index.html" title="Forgot Password" id="link-reset">Forgot Password?</a>
+                            </span> <br>
+                            <!-- No account? Sign up instead bc it's good UX practice -->
+                            <!-- Will need to replace eventually with more modal logic -->
+                            <span class="no-account">
+                                <a href="index.html" title="Sign Up" id="link-signup">No account? Sign up!</a>
+                            </span>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign Up Modal -->
+        <div class="modal" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <form class="form-signin">
+                            <img src="happy-emoji-svgrepo-com.svg" width="100" height="100" class="d-inline-block align-top"
+                                alt="">
+                            <h2 class="h3 mb-3 font-weight-normal"> Welcome! </h2>
+                            <input type="text" class="form-control" placeholder="First name" required> <br>
+                            <input type="text" class="form-control" placeholder="Last name" required> <br>
+                            <input type="text" class="form-control" placeholder="Username" required> <br>
+                            <input type="email" class="form-control" placeholder="Email" required> <br>
+                            <input type ="date" class="form-control" placeholder="Date of birth" required> <br>
+                            <input type="password" class="form-control" placeholder="Password" required> <br>
+                            <input type="password" class="form-control" placeholder="Confirm password" required> <br>
+                            <!-- NEEDS 3 SECURITY QUESTIONS HERE-->
+                            <!-- might do this as a second screen of sign up modal so it's not a long popup -->
+                            <!-- Drop down selection style might be best instead of just text input with placeholder -->
+                            <!-- Q1: select from dtropdown -->
+                            <!-- text input below with placeholder "security q1 answer" -->
+                            <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
+                            <button class="btn btn-secondary btn-block" type="reset">Reset</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <p>Search results will be displayed here</p>
+        </div>
+
+    </body>
+
+    <footer>
+        Let's Take a Selfie! © 2021. All rights reserved
+    </footer>
+
+    <!-- Bootystrap things -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Link to external js file -->
+    <script src="js/script.js"></script>
+</html>
