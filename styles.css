@@ -1,14 +1,15 @@
 body {
     background-color:#dae2e4;
     margin-top: 70px; /* Add a top margin to avoid content overlay */
-  }
+    z-index:2;
+}
 
 .navbar {
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    z-index:1;
+    z-index:4;
   }
 
 .homepage {
@@ -22,14 +23,6 @@ body {
     margin-left: 40px; /* Add a left margin */
     margin-right: 40px; /* Add a left margin */
     width: 60rem;
-}
-
-.square {
-  border: 5px solid red;
-  position: relative;
-  text-align: center;
-  width: 50vw;
-  height: 50vw;
 }
 
 .content {
