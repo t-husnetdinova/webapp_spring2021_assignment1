@@ -1,109 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title> Let's take a selfie! </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="icon" type="image/svg" href="wink-svgrepo-com.svg">
-</head>
+    <head>
+        <title> Let's take a selfie! </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="icon" type="image/svg" href="wink-svgrepo-com.svg">
+    </head>
 
-<body>
-    <header>
-        <link rel="stylesheet" href="styles.css">
-    </header>
-    <nav class="navbar navbar-light navbar-expand-md justify-content-left navbar-fixed-top"
-        style="background-color: #ffffff;">
+    <body>
+        <header>
+            <link rel="stylesheet" href="styles.css">
+        </header>
+        <nav class="navbar navbar-light navbar-expand-md justify-content-left navbar-fixed-top"
+            style="background-color: #ffffff;">
 
-        <a class="navbar-brand" href="#">
-            <img src="wink-svgrepo-com.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-            Let's Take a Selfie!
-        </a>
+            <a class="navbar-brand" href="#">
+                <img src="wink-svgrepo-com.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Let's Take a Selfie!
+            </a>
 
-        <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#login"> Log In
-                </button>
-            </li>
-            <a class="nav-link" href="#"> </a>
-            <li class="nav-item">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signup">
-                    Sign Up </button>
-            </li>
-        </ul>
-    </nav>
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- Log In Modal -->
-    <div class="modal" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Nav bar items -->
+            <ul class="nav navbar-nav ml-auto">
+                <a class="nav-link" href="#"> </a>
+
+                <!-- Search bar -->
+                <li class="nav-item">
+                    <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
+
+                <a class="nav-link" href="#"> </a>
+
+                <!-- Log in button -->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#login">Log In</button>
+                </li>
+
+                <a class="nav-link" href="#"> </a>
+
+                <!-- Sign up button -->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signup">Sign Up</button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Log In Modal -->
+        <div class="modal" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <form class="form-signin">
+                            <img src="smile-svgrepo-com.svg" width="100" height="100" class="d-inline-block align-top"
+                                alt="">
+                            <h2 class="h3 mb-3 font-weight-normal"> Welcome Back! </h2>
+
+                            <input type="email" class="form-control" placeholder="Email" required>
+                            <input type="password" class="form-control" placeholder="Password" required>
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Remember Me
+                            </label>
+                            <button class="btn btn-primary btn-block" type="submit"> Log In </button>
+                    </div>
+                    </form>
                 </div>
-                <div class="modal-body text-center">
-                    <form class="form-signin">
-                        <img src="smile-svgrepo-com.svg" width="100" height="100" class="d-inline-block align-top"
-                            alt="">
-                        <h2 class="h3 mb-3 font-weight-normal"> Welcome Back! </h2>
-
-                        <input type="email" class="form-control" placeholder="Email" required>
-                        <input type="password" class="form-control" placeholder="Password" required>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Remember Me
-                        </label>
-                        <button class="btn btn-primary btn-block" type="submit"> Log In </button>
-                </div>
-                </form>
             </div>
         </div>
-    </div>
 
-    <!-- Log In Modal -->
-    <div class="modal" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+        <!-- Sign Up Modal -->
+        <div class="modal" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <form class="form-signin">
+                            <img src="happy-emoji-svgrepo-com.svg" width="100" height="100" class="d-inline-block align-top"
+                                alt="">
+                            <h2 class="h3 mb-3 font-weight-normal"> Welcome! </h2>
+
+                            <input type="email" class="form-control" placeholder="Email" required>
+                            <input type="text" class="form-control" placeholder="Username" required>
+                            <input type="password" class="form-control" placeholder="Password" required>
+
+                            <button class="btn btn-primary btn-block" type="submit"> Sign Up </button>
+                    </div>
+                    </form>
                 </div>
-                <div class="modal-body text-center">
-                    <form class="form-signin">
-                        <img src="happy-emoji-svgrepo-com.svg" width="100" height="100" class="d-inline-block align-top"
-                            alt="">
-                        <h2 class="h3 mb-3 font-weight-normal"> Welcome! </h2>
-
-                        <input type="email" class="form-control" placeholder="Email" required>
-                        <input type="text" class="form-control" placeholder="Username" required>
-                        <input type="password" class="form-control" placeholder="Password" required>
-
-                        <button class="btn btn-primary btn-block" type="submit"> Sign Up </button>
-                </div>
-                </form>
             </div>
         </div>
-    </div>
 
 
-    <footer>
+        <footer>
 
-    </footer>
+        </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
-</body>
-
-
+    </body>
 
 </html>
