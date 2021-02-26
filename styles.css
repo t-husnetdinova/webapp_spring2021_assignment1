@@ -43,6 +43,12 @@ body {
     object-fit: cover;
 }
 
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  background-color: #111; /* Black*/
+}
+
 #toTopBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
