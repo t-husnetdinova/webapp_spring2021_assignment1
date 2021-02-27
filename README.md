@@ -1,6 +1,6 @@
 # # CSCI4800 Assignment 1
 
-![Screenshot](img/wink-svgrepo-com.svg | width=100)
+![Screenshot](img/wink-svgrepo-com.svg)
 
 Names: Tammy Husnetdinova and Alex Verkest <br>
 Class: CSCI4800-E01 <br>
