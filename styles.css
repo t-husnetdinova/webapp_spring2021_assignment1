@@ -4,6 +4,13 @@ body {
     z-index:2;
 }
 
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .btn{
     margin-left:10px;
  }
@@ -43,18 +50,6 @@ body {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   background-color: #111; /* Black*/
-}
-
-.btn-group {
-  margin-left: 15px;
-}
-
-.all-time {
-  color: blue;
-}
-
-footer {
-  margin-left: 10px; /* Add a left margin */
 }
 
 #toTopBtn {

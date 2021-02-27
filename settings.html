@@ -3,7 +3,6 @@
 
     <head>
         <title> Settings </title>
-
         <!-- Links to external images -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -64,8 +63,10 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#">Account</a>
-                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="account.html">Account</a>
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Sign Out</a>
                   </div>
                 </li>
             </ul>
@@ -186,16 +187,58 @@
             </div>
         </div>
 
-        <!-- Back to top scroll button -->
-        <button onclick="topFunction()" id="toTopBtn" title="Back to Top">Back to Top</button>
+        <!-- Trending -->
+        <br>
+        <div class="homepageHeader mx-auto">
+          Settings
+        </div>
+        <br>
+
+        <div class="card text-center homepage mx-auto border-light">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Privacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Notifications</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body text-left">
+            <h5 class="card-title">Account Settings</h5>
+            <p class="card-text"> Login Preferences </p>
+            <hr/>
+            <p class="card-text"> <strong> Email </strong> </p>
+            <p class="card-text"> yourname@url <a href="#" class="badge badge-secondary">Reset</a>  </p>
+            <p class="card-text"> <strong> Password </strong> </p>
+            <p class="card-text"> *************** <a href="#" class="badge badge-secondary">Reset</a> </p>
+            <p class="card-text"> More Settings </p>
+            <hr/> <br> <br>
+            <p class="card-text"> Some More Settings </p>
+            <hr/> <br> <br>
+            <p class="card-text"> Even More Settings </p>
+            <hr/> <br> <br>
+          </div>
+        </div>
 
         <!-- Bottom navbar? -->
         <!-- I don't think we need this if we have an infinite scroll homepage like reddit -->
         <!-- Reddit has a bottom right sidebar with About/Careers/Footer copyright info -->
 
-        <footer>
+        <footer class="homepageHeader mx-auto">
             Let's Take a Selfie! © 2021. All rights reserved
         </footer>
+        <br>
 
         <!-- Bootystrap things -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -207,9 +250,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-
-        <!-- Link to external js file -->
-        <script src="js/script.js"></script>
 
 
     </body>
