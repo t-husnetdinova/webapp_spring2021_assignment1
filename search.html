@@ -93,7 +93,7 @@
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">Remember Me</label> <br> <br>
                             <button class="btn btn-primary btn-block" type="submit">Log In</button>
-                            <button class="btn btn-secondary btn-block" type="reset">Reset</button> <br>
+                            <button class="btn btn-secondary btn-block btn-sm" type="reset">Reset</button> <br>
                             <!-- Password reset -->
                             <!-- Will need to replace eventually with ref to reset page or more modal logic -->
                             <span class="forgot-password">
@@ -102,12 +102,10 @@
                             <!-- No account? Sign up instead bc it's good UX practice -->
                             <!-- Will need to replace eventually with more modal logic -->
                             <span class="no-account">
-                              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signup"> No account? Sign up!</a>
-
-
+                                <a href="index.html" title="Sign Up" id="link-signup">No account? Sign up!</a>
                             </span>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -126,29 +124,104 @@
                             <img src="happy-emoji-svgrepo-com.svg" width="100" height="100" class="d-inline-block align-top"
                                 alt="">
                             <h2 class="h3 mb-3 font-weight-normal"> Welcome! </h2>
-                            <input type="text" class="form-control" placeholder="First name" required> <br>
-                            <input type="text" class="form-control" placeholder="Last name" required> <br>
-                            <input type="text" class="form-control" placeholder="Username" required> <br>
-                            <input type="email" class="form-control" placeholder="Email" required> <br>
-                            <input type ="date" class="form-control" placeholder="Date of birth" required> <br>
-                            <input type="password" class="form-control" placeholder="Password" required> <br>
-                            <input type="password" class="form-control" placeholder="Confirm password" required> <br>
+                            <div class="row">
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="First name" required> <br>
+                              </div>
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" required> <br>
+                              </div>
+                              <div class="col">
+                                <input type ="date" class="form-control" placeholder="Date of birth" required> <br>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="Username" required> <br>
+                              </div>
+                              <div class="col">
+                                <input type="email" class="form-control" placeholder="Email" required> <br>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col">
+                                <input type="password" class="form-control" placeholder="Password" required> <br>
+                              </div>
+                              <div class="col">
+                                <input type="password" class="form-control" placeholder="Confirm password" required> <br>
+                              </div>
+                            </div>
+
                             <!-- NEEDS 3 SECURITY QUESTIONS HERE-->
-                            <!-- might do this as a second screen of sign up modal so it's not a long popup -->
-                            <!-- Drop down selection style might be best instead of just text input with placeholder -->
-                            <!-- Q1: select from dtropdown -->
-                            <!-- text input below with placeholder "security q1 answer" -->
+                            Security Questions <br>
+                            <div class="row">
+                              <div class="col">
+                                <fieldset class="borderless">
+                                  <input type="text" class="form-control" placeholder="Security Question 1" required>
+                                  <input type="text" class="form-control" placeholder="Answer" required>
+                                </fieldset>
+                              </div>
+                              <div class="col">
+                                <fieldset class="borderless">
+                                  <input type="text" class="form-control" placeholder="Security Question 2" required>
+                                  <input type="text" class="form-control" placeholder="Answer" required>
+                                </fieldset>
+                              </div>
+                              <div class="col">
+                                <fieldset class="borderless">
+                                  <input type="text" class="form-control" placeholder="Security Question 3" required>
+                                  <input type="text" class="form-control" placeholder="Answer" required>
+                                </fieldset>
+                              </div>
+                            </div>
+
+                            <br>
                             <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
-                            <button class="btn btn-secondary btn-block" type="reset">Reset</button>
+                            <button class="btn btn-secondary btn-block btn-sm" type="reset">Reset</button>
+                        </form>
                     </div>
-                    </form>
+
                 </div>
             </div>
         </div>
+        <br>
 
         <div class="row-col col-sm-5">
             <p>Displaying results:</p>
         </div>
+
+        <div class="sort-bar">
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondaryy dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort by:
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Relevance</a>
+                    <a class="dropdown-item" href="#">Date</a>
+                    <a class="dropdown-item" href="#">Hot</a>
+                    <a class="dropdown-item" href="#">Top</a>
+                    <a class="dropdown-item" href="#">Comments</a>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondaryy dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Posts from:
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Past Hour</a>
+                    <a class="dropdown-item" href="#">Past 24 Hours</a>
+                    <a class="dropdown-item" href="#">Past Week</a>
+                    <a class="dropdown-item" href="#">Past Month</a>
+                    <a class="dropdown-item" href="#">Past Year</a>
+                    <a class="dropdown-item all-time" href="#">All time</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
 
         <!-- Result 1-->
         <div class="card mx-auto homepage text-center">
