@@ -16,8 +16,10 @@
         </header>
 
         <!-- Top navbar -->
-        <nav class="navbar navbar-light navbar-expand-md justify-content-left navbar-fixed-top"
+        <nav class="navbar navbar-light navbar-expand-md justify-content-left"
             style="background-color: #ffffff;">
+
+            <a class="nav-link" href="#"> </a>
 
             <a class="navbar-brand" href="#">
                 <img src="wink-svgrepo-com.svg" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -35,30 +37,40 @@
 
             <!-- Nav bar items -->
             <ul class="nav navbar-nav ml-auto">
-                <a class="nav-link" href="#"> </a>
-
                 <!-- Search bar -->
                 <li class="nav-item">
                     <form class="form-inline">
                       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      <!-- Please keep this version of the button just in case -->
+                      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                      <a href="search.html" class="btn btn-outline-success my-2 my-sm-0" type="submit"> Search </a>
                     </form>
                 </li>
-
-                <a class="nav-link" href="#"> </a>
 
                 <!-- Log in button -->
                 <li class="nav-item">
                     <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#login">Log In</button>
                 </li>
 
-                <a class="nav-link" href="#"> </a>
-
                 <!-- Sign up button -->
                 <li class="nav-item">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signup">Sign Up</button>
                 </li>
+
+                <li class="nav-item dropdown">
+                  <button type="button" class="btn btn-outline-line dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="Blank_face.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Account</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Sign Out</a>
+                  </div>
+                </li>
             </ul>
+          </div>
         </nav>
 
         <!-- Log In Modal -->
