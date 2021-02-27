@@ -16,8 +16,10 @@
         </header>
 
         <!-- Top navbar -->
-        <nav class="navbar navbar-light navbar-expand-md justify-content-left navbar-fixed-top"
+        <nav class="navbar navbar-light navbar-expand-md justify-content-left"
             style="background-color: #ffffff;">
+
+            <a class="nav-link" href="#"> </a>
 
             <a class="navbar-brand" href="#">
                 <img src="wink-svgrepo-com.svg" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -41,7 +43,9 @@
                 <li class="nav-item">
                     <form class="form-inline">
                       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      <!-- Please keep this version of the button just in case -->
+                      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                      <a href="search.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</a>
                     </form>
                 </li>
 
@@ -58,7 +62,24 @@
                 <li class="nav-item">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signup">Sign Up</button>
                 </li>
+
+                <a class="nav-link" href="#"> </a>
+
+                <li class="nav-item dropdown">
+                  <button type="button" class="btn btn-outline-line dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="Blank_face.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Account</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Sign Out</a>
+                  </div>
+                </li>
             </ul>
+
+            <a class="nav-link" href="#"> </a>
         </nav>
 
         <!-- Log In Modal -->
@@ -81,7 +102,7 @@
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">Remember Me</label> <br> <br>
                             <button class="btn btn-primary btn-block" type="submit">Log In</button>
-                            <button class="btn btn-secondary btn-block" type="reset">Reset</button> <br>
+                            <button class="btn btn-secondary btn-block btn-sm" type="reset">Reset</button> <br>
                             <!-- Password reset -->
                             <!-- Will need to replace eventually with ref to reset page or more modal logic -->
                             <span class="forgot-password">
@@ -112,28 +133,100 @@
                             <img src="happy-emoji-svgrepo-com.svg" width="100" height="100" class="d-inline-block align-top"
                                 alt="">
                             <h2 class="h3 mb-3 font-weight-normal"> Welcome! </h2>
-                            <input type="text" class="form-control" placeholder="First name" required> <br>
-                            <input type="text" class="form-control" placeholder="Last name" required> <br>
-                            <input type="text" class="form-control" placeholder="Username" required> <br>
-                            <input type="email" class="form-control" placeholder="Email" required> <br>
-                            <input type ="date" class="form-control" placeholder="Date of birth" required> <br>
-                            <input type="password" class="form-control" placeholder="Password" required> <br>
-                            <input type="password" class="form-control" placeholder="Confirm password" required> <br>
-                            <!-- NEEDS 3 SECURITY QUESTIONS HERE-->
-                            <!-- might do this as a second screen of sign up modal so it's not a long popup -->
-                            <!-- Drop down selection style might be best instead of just text input with placeholder -->
-                            <!-- Q1: select from dtropdown -->
-                            <!-- text input below with placeholder "security q1 answer" -->
+                            <div class="row">
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="First name" required> <br>
+                              </div>
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" required> <br>
+                              </div>
+                              <div class="col">
+                                <input type ="date" class="form-control" placeholder="Date of birth" required> <br>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="Username" required> <br>
+                              </div>
+                              <div class="col">
+                                <input type="email" class="form-control" placeholder="Email" required> <br>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col">
+                                <input type="password" class="form-control" placeholder="Password" required> <br>
+                              </div>
+                              <div class="col">
+                                <input type="password" class="form-control" placeholder="Confirm password" required> <br>
+                              </div>
+                            </div>
+
+                            <h8> Security Questions </h8> <br>
+
+                            <div class="row">
+                              <div class="col">
+                                <fieldset class="borderless">
+                                  <input type="text" class="form-control" placeholder="Security Question 1" required>
+                                  <input type="text" class="form-control" placeholder="Answer" required>
+                                </fieldset>
+                              </div>
+                              <div class="col">
+                                <fieldset class="borderless">
+                                  <input type="text" class="form-control" placeholder="Security Question 2" required>
+                                  <input type="text" class="form-control" placeholder="Answer" required>
+                                </fieldset>
+                              </div>
+                              <div class="col">
+                                <fieldset class="borderless">
+                                  <input type="text" class="form-control" placeholder="Security Question 3" required>
+                                  <input type="text" class="form-control" placeholder="Answer" required>
+                                </fieldset>
+                              </div>
+                            </div>
+
+                            <br>
                             <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
-                            <button class="btn btn-secondary btn-block" type="reset">Reset</button>
+                            <button class="btn btn-secondary btn-block btn-sm" type="reset">Reset</button>
                     </div>
                     </form>
                 </div>
             </div>
         </div>
+        <br>
         
         <div class="row-col col-sm-5">
             <p>Displaying results:</p>
+        </div>
+
+        <div class="sort-bar">
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondaryy dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort by:
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Relevance</a>
+                    <a class="dropdown-item" href="#">Date</a>
+                    <a class="dropdown-item" href="#">Hot</a>
+                    <a class="dropdown-item" href="#">Top</a>
+                    <a class="dropdown-item" href="#">Comments</a>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondaryy dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Posts from:
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Past Hour</a>
+                    <a class="dropdown-item" href="#">Past 24 Hours</a>
+                    <a class="dropdown-item" href="#">Past Week</a>
+                    <a class="dropdown-item" href="#">Past Month</a>
+                    <a class="dropdown-item" href="#">Past Year</a>
+                    <a class="dropdown-item all-time" href="#">All time</a>
+                </div>
+            </div>
         </div>
 
         <!-- Result 1-->

@@ -19,6 +19,7 @@ body {
 }
 
 .homepageHeader {
+    width: 90%;
     margin-left: 40px; /* Add a left margin */
     margin-right: 40px; /* Add a left margin */
     width: 60rem;
@@ -39,6 +40,14 @@ body {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   background-color: #111; /* Black*/
+}
+
+.btn-group {
+  margin-left: 15px;
+}
+
+.all-time {
+  color: blue;
 }
 
 footer {
