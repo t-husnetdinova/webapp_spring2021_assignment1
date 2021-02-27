@@ -41,6 +41,10 @@ body {
   background-color: #111; /* Black*/
 }
 
+footer {
+  margin-left: 10px; /* Add a left margin */
+}
+
 #toTopBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
