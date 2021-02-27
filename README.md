@@ -16,7 +16,7 @@
 <br>
 **Technologies used:** HTML5, CSS3, Javascript for code, Visual Studio Code for development and testing, Google Chrome browser for testing, Windows 10 OS <br>
 <br>
-**Justification in design choices:** Our social network site is heavily inspired by Reddit.com and its clean layout and user-friendly interface. ADD MORE HERE
+**Justification in design choices:** Our social network site is heavily inspired by Reddit.com and its clean layout and user-friendly interface. ADD MORE HERE <br>
 <br>
 **Extra features:** Although it was not required, we decided to challenge ourselves by using bootstrap features that were new to both if us, such as modals for our sign in/sign up, pagination for search results, and dropdown menus for the homepage and search filtering. We decided to create links/references between our dummy/mockup pages, so clicking search will lead to the search results page, just like clicking on Settings in the main nav bar will lead to a settings page. With some extra time and momentum we picked up toward the due date, we also decided to start on some minimal javascript by adding a button that would allow for frictionless scrolling back to the top of the page. Bootstrap also came in handy there for styling the button itself. Finally, as another extra step, we created a separate directory for any images that will be used in this project. <br>
 <br>
