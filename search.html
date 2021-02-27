@@ -37,7 +37,7 @@
 
             <!-- Nav bar items -->
             <ul class="nav navbar-nav ml-auto">
-                <a class="nav-link" href="#"> </a>
+                <!-- Spacing Needed! -->
 
                 <!-- Search bar -->
                 <li class="nav-item">
@@ -45,32 +45,32 @@
                       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                       <!-- Please keep this version of the button just in case -->
                       <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-                      <a href="search.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</a>
+                      <a href="search.html" class="btn btn-outline-success my-2 my-sm-0" type="submit"> Search </a>
                     </form>
                 </li>
 
-                <a class="nav-link" href="#"> </a>
+                <!-- Spacing Needed! -->
 
                 <!-- Log in button -->
                 <li class="nav-item">
                     <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#login">Log In</button>
                 </li>
 
-                <a class="nav-link" href="#"> </a>
+                <!-- Spacing Needed! -->
 
                 <!-- Sign up button -->
                 <li class="nav-item">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signup">Sign Up</button>
                 </li>
 
-                <a class="nav-link" href="#"> </a>
+                <!-- Spacing Needed! -->
 
                 <li class="nav-item dropdown">
                   <button type="button" class="btn btn-outline-line dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="Blank_face.svg" width="30" height="30" class="d-inline-block align-top" alt="">
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-menu dropdown-menu-right">
                     <a class="dropdown-item" href="#">Account</a>
                     <a class="dropdown-item" href="#">Settings</a>
                     <div class="dropdown-divider"></div>
@@ -78,8 +78,9 @@
                   </div>
                 </li>
             </ul>
+          </div>
 
-            <a class="nav-link" href="#"> </a>
+            <!-- Spacing Needed! -->
         </nav>
 
         <!-- Log In Modal -->
@@ -111,12 +112,10 @@
                             <!-- No account? Sign up instead bc it's good UX practice -->
                             <!-- Will need to replace eventually with more modal logic -->
                             <span class="no-account">
-                              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signup"> No account? Sign up!</a>
-
-
+                                <a href="index.html" title="Sign Up" id="link-signup">No account? Sign up!</a>
                             </span>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -165,8 +164,8 @@
                               </div>
                             </div>
 
-                            <h8> Security Questions </h8> <br>
-
+                            <!-- NEEDS 3 SECURITY QUESTIONS HERE-->
+                            Security Questions <br>
                             <div class="row">
                               <div class="col">
                                 <fieldset class="borderless">
@@ -191,11 +190,14 @@
                             <br>
                             <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
                             <button class="btn btn-secondary btn-block btn-sm" type="reset">Reset</button>
+                        </form>
                     </div>
-                    </form>
+
                 </div>
             </div>
         </div>
+        <br>
+
         <div class="row-col col-sm-5">
             <p>Displaying results:</p>
         </div>
@@ -228,6 +230,8 @@
                 </div>
             </div>
         </div>
+
+        <br>
 
         <!-- Result 1-->
         <div class="card mx-auto homepage text-center">
